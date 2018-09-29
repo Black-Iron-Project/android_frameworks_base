@@ -58,6 +58,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import com.android.internal.util.blackiron.Utils;
 import com.android.app.viewcapture.ViewCapture;
 import com.android.app.viewcapture.ViewCaptureAwareWindowManager;
 import com.android.systemui.CoreStartable;
@@ -364,11 +365,10 @@ public class ScreenPinningRequest implements
          * @return whether there is a soft nav bar on specific display.
          */
         private boolean hasSoftNavigationBar(Context context, int displayId) {
-            if (displayId == DEFAULT_DISPLAY &&
-                    LineageSettings.System.getIntForUser(context.getContentResolver(),
-                            LineageSettings.System.FORCE_SHOW_NAVBAR, 0,
-                            UserHandle.USER_CURRENT) == 1) {
-                return true;
+            if (displayId == DEFAULT_DISPLAY) {
+                return LineageSettings.System.getIntForUser(context.getContentResolver(),
+                            LineageSettings.System.FORCE_SHOW_NAVBAR,  Utils.hasNavbarByDefault(context) ? 1 : 0,
+                            UserHandle.USER_CURRENT) == 1;
             }
             try {
                 return WindowManagerGlobal.getWindowManagerService().hasNavigationBar(displayId);
