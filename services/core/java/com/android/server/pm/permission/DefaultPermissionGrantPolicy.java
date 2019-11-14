@@ -1047,6 +1047,15 @@ final class DefaultPermissionGrantPolicy {
         grantSystemFixedPermissionsToSystemPackage(pm, "com.google.android.apps.security.securityhub", userId,
                 STORAGE_PERMISSIONS);
 
+        // Personal Safety
+        grantSystemFixedPermissionsToSystemPackage(pm, "com.google.android.apps.safetyhub", userId,
+                ACTIVITY_RECOGNITION_PERMISSIONS, CAMERA_PERMISSIONS, CONTACTS_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS,
+                MICROPHONE_PERMISSIONS, PHONE_PERMISSIONS);
+
+        // Security Hub
+        grantSystemFixedPermissionsToSystemPackage(pm, "com.google.android.apps.security.securityhub", userId,
+                STORAGE_PERMISSIONS);
+
         // Project Fi
         grantSystemFixedPermissionsToSystemPackage(pm, "com.google.android.apps.tycho", userId, CONTACTS_PERMISSIONS,
                 PHONE_PERMISSIONS, MICROPHONE_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS, SMS_PERMISSIONS);
