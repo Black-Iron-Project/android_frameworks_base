@@ -52,4 +52,7 @@
 
     <!-- QS A11 Style -->
     <dimen name="custom_qs_panel_padding_top">0dp</dimen>
+
+    <!-- Default line spacing multiplier between hours and minutes of the keyguard clock -->
+    <item name="keyguard_clock_line_spacing_scale" type="dimen" format="float">.7</item>
 </resources>
