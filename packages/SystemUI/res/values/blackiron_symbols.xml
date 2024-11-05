@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2024 Blackiron Android Project
+     Copyright (C) 2016-2024 Blackiron Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,4 +16,9 @@
 -->
 <resources>
 
+    <!-- The location of the devices physical tri state switch -->
+    <java-symbol type="integer" name="config_alertSliderLocation" />
+
+    <!-- Whether key handler sends intent when changing slider position -->
+    <java-symbol type="string" name="config_alertSliderIntent" />
 </resources>
