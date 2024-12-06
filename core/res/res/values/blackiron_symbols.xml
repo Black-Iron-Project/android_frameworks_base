@@ -101,4 +101,9 @@
 
     <!-- Lock gesture -->
     <java-symbol type="string" name="gesture_locked_warning" />
+
+    <!-- Shake Gestures toast -->
+    <java-symbol type="string" name="shake_gesture_toast_dnd_mode" />
+    <java-symbol type="string" name="shake_gesture_toast_vibrate_mode" />
+    <java-symbol type="string" name="shake_gesture_toast_normal_mode" />
 </resources>
