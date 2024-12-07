@@ -16,11 +16,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Button that copies the url to the log of a crashed application -->
-    <string name="aerr_copy">Copy crash log URL</string>
-    <string name="url_copy_success">URL copied successfully</string>
-    <string name="url_copy_failed">An error occured while uploading the log to Pasty</string>
-
     <!-- Shake Gestures toast -->
     <string name="shake_gesture_toast_dnd_mode">Shake Gestures: Switched to do not disturb mode</string>
     <string name="shake_gesture_toast_vibrate_mode">Shake Gestures: Switched to vibrate ringer mode</string>
@@ -31,4 +26,9 @@
 
     <!-- Lock gesture -->
     <string name="gesture_locked_warning">Swipe again to unlock gestures</string>
+ 
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">Copy crash log URL</string>
+    <string name="url_copy_success">URL copied successfully</string>
+    <string name="url_copy_failed">An error occured while uploading the log to stagbin</string>
 </resources>
